@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GUITest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-20T21:39:32" hostname="DESKTOP-46RJUTG" time="0.394">
+  <properties/>
+  <testcase name="previousPageTest" classname="GUITest" time="0.325"/>
+  <testcase name="nextPageTest" classname="GUITest" time="0.068"/>
+  <system-out><![CDATA[3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

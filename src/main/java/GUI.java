@@ -1,5 +1,3 @@
-package main.java;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,7 +6,7 @@ public class GUI extends JFrame {
     public JButton next;
     public JButton previous;
     public JLabel text = new JLabel();
-    private int page = 0;
+    public int page = 2;
     private FileService fileService;
 
     public GUI() {
@@ -51,13 +49,13 @@ public class GUI extends JFrame {
         this.text.setText(String.format("<html><div WIDTH=%d>%s</div></html>", 350, text));
     }
 
-    private void nextPage() {
+    public void nextPage() {
         this.page++;
         System.out.println(this.page);
         this.setText(this.fileService.getPartText(this.page));
     }
 
-    private void previousPage() {
+    public void previousPage() {
         this.page--;
         this.setText(this.fileService.getPartText(this.page));
     }

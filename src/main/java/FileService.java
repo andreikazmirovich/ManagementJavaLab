@@ -1,22 +1,18 @@
-package main.java;
-
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class FileService {
-    private String path;
-    private String fullText;
+    public String path;
+    public String fullText;
 
     public FileService(String path) {
         this.path = path;
         this.getFullText();
     }
 
-    private void getFullText() {
+    public void getFullText() {
         String text = "";
         try {
             BufferedReader in = new BufferedReader(new FileReader(this.path));

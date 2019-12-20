@@ -1,0 +1,11 @@
+apply plugin: 'application'
+
+mainClassName = 'Program'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
+}
