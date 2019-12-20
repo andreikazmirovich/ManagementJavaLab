@@ -27,10 +27,10 @@ public class GUI extends JFrame {
     }
 
     private void createButtons() {
-        this.next = new JButton(">");
-        this.previous = new JButton("<");
-        this.next.setBounds(215,320,50,30);
-        this.previous.setBounds(155,320,50,30);
+        this.next = new JButton("Next");
+        this.previous = new JButton("Previous");
+        this.next.setBounds(215,320,90,30);
+        this.previous.setBounds(115,320,90,30);
         this.next.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
